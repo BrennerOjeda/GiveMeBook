@@ -5,4 +5,5 @@ public class Autor {
 	private String nomAut;
 	private String apellido;
 	private int dni;
+	private int cod;
 }
