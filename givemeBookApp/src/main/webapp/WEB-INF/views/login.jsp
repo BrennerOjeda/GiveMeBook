@@ -1,3 +1,5 @@
+<%@ include file="/WEB-INF/views/include.jsp" %>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -42,6 +44,6 @@
       <p>Olvido su password? <a href="index.html">Click aqui para resetear</a>.</p>
     </div>
   </section>
-
+ <p>Greetings, it is now <c:out value="${now}"/></p>
 </body>
 </html>
