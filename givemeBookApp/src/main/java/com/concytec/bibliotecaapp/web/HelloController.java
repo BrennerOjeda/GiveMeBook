@@ -18,7 +18,7 @@ public class HelloController {
 
     protected final Log logger = LogFactory.getLog(getClass());
 
-    @RequestMapping(value="/login.htm")
+    @RequestMapping(value="/login.html")
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 

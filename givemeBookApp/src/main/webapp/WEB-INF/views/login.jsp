@@ -4,15 +4,19 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html> 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Login Form</title>
-  <link rel="stylesheet" href="css/style.css" tipe = "text/css"></link>
-  <script type = "text/javascript" src="./js/control_logeo.js"></script> 
-</head>
+			<head>
+			  <meta charset="utf-8">
+			  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+			  <title>Login Form</title>
+			  <!-- <link rel="stylesheet" href="css/style.css" tipe = "text/css"></link> -->
+			  <!-- <script type = "text/javascript" src="./js/control_logeo.js"></script> --> 
+			  
+			  <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+			  <script src="<c:url value="/resources/js/control_logeo.js" />"></script>
+				
+			</head>
 <body>
-	
+ 
   <section class="container">
     <div class="login">
     	
