@@ -22,9 +22,10 @@ public class HelloController {
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-    	String now = (new Date()).toString();
+        String now = (new Date()).toString();
         logger.info("Returning hello view with " + now);
 
-        return new ModelAndView("WEB-INF/views/login.jsp","now", now);
+        return new ModelAndView("login", "now", now);
+
     }
 }

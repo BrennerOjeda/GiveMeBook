@@ -49,5 +49,7 @@
     </div>
   </section>
  <p>Greetings, it is now <c:out value="${now}"/></p>
+
+ 
 </body>
 </html>
