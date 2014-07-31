@@ -10,7 +10,7 @@ import com.concytec.bibliotecaapp.domain.Recurso;
 public interface RecursoDao {
 	public void add(Recurso recurso);
 	public void edit(Recurso recurso);
-	public void delete(int ideRec);
+	public void delete(Recurso recurso);
 	public Recurso getRecurso(int ideRec);
 	public List<Recurso> getAllRecursos();
 	//public int getLastInsertedId();

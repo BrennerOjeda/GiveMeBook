@@ -6,8 +6,6 @@ import com.concytec.bibliotecaapp.domain.Autor;
 import com.concytec.bibliotecaapp.repository.AutorDao;
 import com.concytec.bibliotecaapp.repository.InMemoryAutorDao;
 
-
-
 public class NewAutor {
 private AutorDao autorDao;
 	
@@ -32,7 +30,7 @@ private AutorDao autorDao;
 		autorDao.edit(updateAutor);		
 	}
 	
-	public void deleteTipoUsuario(int codAut)
+	public void deleteAutor(int codAut)
 	{
 		System.out.println("eliminar autor " + codAut);
 		autorDao = new InMemoryAutorDao();
@@ -45,12 +43,9 @@ private AutorDao autorDao;
 		return autorDao.getAutor(codAut);
 		
 	}
-	public List<Autor>  getAutores(){
-		autorDao = new InMemoryAutorDao();
-		return autorDao.getAllAutores();
-		
-	}
-
 	
-
+	public List<Autor>  getListaAutores(){
+		autorDao = new InMemoryAutorDao();
+		return autorDao.getAllAutores();		
+	}
 }
