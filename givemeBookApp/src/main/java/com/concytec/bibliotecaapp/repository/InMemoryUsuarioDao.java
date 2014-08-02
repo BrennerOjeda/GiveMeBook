@@ -69,7 +69,7 @@ public class InMemoryUsuarioDao implements UsuarioDao{
 
 	
 	public Usuario loginUsuario(String docIdeUsu, String password) {
-		Usuario u = null;
+		Usuario usuarioRpta = null;
 		s = sesion.getCurrentSession();
 		System.out.println("usuario logeandose");
 		trans=s.beginTransaction();
@@ -78,18 +78,16 @@ public class InMemoryUsuarioDao implements UsuarioDao{
 		query.setParameter("docIdeUsu", docIdeUsu);
 		query.setParameter("passUsu", password);
 		
-		List user = query.list();
-		Iterator listIterator = user.iterator();
-        while(listIterator.hasNext())
+		List usuario = query.list();
+		Iterator lista = usuario.iterator();
+        while(lista.hasNext())
         {
-            Usuario result = (Usuario) listIterator.next();
-            System.out.println("UserId :" +result.getNomUsu() + result.getApeUsu());
-            System.out.println("Mail Id :" +result.getEmaUsu());
-            u = result;
+            Usuario result = (Usuario) lista.next();        
+            usuarioRpta = result;
         }
         
 		trans.commit();
-		return u;
+		return usuarioRpta;
 	}
 
 }

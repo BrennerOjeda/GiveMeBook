@@ -10,7 +10,6 @@ public interface UsuarioDao {
 	public Usuario getUsuario(String docIdeUsu);
 	public List<Usuario> getAllUsuarios();
 	public Usuario loginUsuario (String docIdeUsu, String password);
-	//public List<Foto> getUsuarioFotos(Usuario usuario);
-	//public List<String> getLastNews (Usuario usuario);
+	
 
 }
